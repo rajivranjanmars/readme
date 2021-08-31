@@ -2,12 +2,22 @@
 #include <string>
 #include <vector>
 #include <conio.h>
+#include <fstream>
 using namespace std;
 
 void readmeGenerator(vector<string>readme){
-   for(int i=0;i<readme.size();i++) {
-      cout << readme[i] << endl;
+    for(int i=0;i<readme.size();i++) {
+      cout << readme[i] ;
    }
+}
+
+void write(vector<string> v){
+	ofstream file;
+	file.open("rajivkifile.txt");
+	for(int i=0;i<v.size();++i){
+		file<<v[i]<<endl;
+	}
+	file.close();
 }
 
 int main(){
@@ -22,7 +32,7 @@ cin.tie(NULL);
         getline(cin, name);
         string nameline = "### Hi ,I Am " + name + " <img src=\" https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif\" width=\"30px\"> \n \n" ;   // i have to add link
 
-       cout<< nameline;
+     //  cout<< nameline;
 
         readme.push_back(nameline);
         // name section ends
@@ -34,7 +44,7 @@ cin.tie(NULL);
         cout << "please enter your github username" << endl;
         cin >> githubUserName;
         string profileLinks = "![](https://komarev.com/ghpvc/?username="+githubUserName+ "&color=blue)\n";
-         cout << profileLinks;
+       //  cout << profileLinks;
          readme.push_back(profileLinks);
       // add profile views section ends
 
@@ -45,7 +55,7 @@ cin.tie(NULL);
         string about;
         getline(cin, about);
         about = "<h3>" + about + "</h3>\n\n\n\n";
-        cout << about << endl;
+     //   cout << about << endl;
         readme.push_back(about);
         //one line tag ends
 
@@ -54,7 +64,7 @@ cin.tie(NULL);
         string job;
         getline(cin, job);
         job = "- 👨‍🏭 I’m currently pursuing **" + job + "**\n";
-        cout << job << endl;
+      //  cout << job << endl;
         readme.push_back(job);
 
         // current job section ends
@@ -64,7 +74,7 @@ cin.tie(NULL);
         string learn;
         getline(cin, learn);
         learn = "- 🏫 I’m currently learning **" + learn + "**\n";
-        cout << learn << endl;
+     //   cout << learn << endl;
         readme.push_back(learn);
         //current learning section ends
 
@@ -73,7 +83,7 @@ cin.tie(NULL);
         string collaborate;
         getline(cin, collaborate);
         collaborate = "- 🙌 I’m looking to collaborate on**" + collaborate + "**\n";
-        cout << collaborate << endl;
+      //  cout << collaborate << endl;
         readme.push_back(collaborate);
         //current collaborate section ends
 
@@ -82,7 +92,7 @@ cin.tie(NULL);
         string help;
         getline(cin, help);
         help = "- 🤔 I’m looking for help with **" + help + "**\n";
-        cout << help << endl;
+      //  cout << help << endl;
         readme.push_back(help);
         //current help section ends
 
@@ -91,7 +101,7 @@ cin.tie(NULL);
         string goal;
         getline(cin, goal);
         goal = "- 🥅 2021 Goals: **" + goal + "**\n";
-        cout << goal << endl;
+       // cout << goal << endl;
         readme.push_back(goal);
         //current help section ends
 
@@ -100,7 +110,7 @@ cin.tie(NULL);
         string ask;
         getline(cin, ask);
         ask = "- 💬 Ask me about Anything **" + ask + "**\n\n";
-        cout << ask << endl;
+      //  cout << ask << endl;
         readme.push_back(ask);
         // ask me anything ends
 
@@ -108,29 +118,32 @@ cin.tie(NULL);
 
         //social media section starts
         string look = "🕵 Take a look at my repositories and let's get in touch!\n\n";
-        cout << look << endl;
+       // cout << look << endl;
         readme.push_back(look);
 
         // todo
         // add linkedin 
 
          string linkedinUsername;
-         
+         cout << "please enter your linkedin username" << endl;
          cin >> linkedinUsername;
-         string linkedinBadge = "[![Linkedin Badge](https://img.shields.io/badge/-" + linkedinUsername + "-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/" + linkedinUsername + "/)](https://www.linkedin.com/in/" + linkedinUsername + "/) \n";
+         string linkedinBadge = "[![Linkedin Badge](https://img.shields.io/badge/-" + linkedinUsername + "-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/" + linkedinUsername + "/)](https://www.linkedin.com/in/" + linkedinUsername + "/) ";
          readme.push_back( linkedinBadge);
          // add facebook
          string facebookUsername;
+         cout << "please enter your facebook username" << endl;
          cin >> facebookUsername;
          string facebookBadge = "[![Facebook Badge](https://img.shields.io/badge/-" + facebookUsername + "-3b5998?style=flat-square&labelColor=3b5998&logo=facebook&logoColor=white&link=https://www.facebook.com/" + facebookUsername + ")](https://www.facebook.com/" + facebookUsername + ")\n ";
          readme.push_back(facebookBadge);
          // add instagram
          string instagramUsername;
+         cout << "please enter your instagram username" << endl;
          cin >> instagramUsername;
          string instagramBadge = "[![Instagram Badge](https://img.shields.io/badge/-@" + instagramUsername + "-E4405F?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/" + instagramUsername + ")](https://www.instagram.com/" + instagramUsername + ") \n";
          readme.push_back(instagramBadge);
          // add  twitter
          string twitterUsername;
+         cout << "please enter your twitter username" << endl;
          cin >> twitterUsername;
          string twitterBadge = "[![Twitter Badge](https://img.shields.io/badge/-@" + twitterUsername + "-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/" + twitterUsername + ")](https://twitter.com/" + twitterUsername + ") ";
          readme.push_back(twitterBadge);
@@ -144,7 +157,7 @@ cin.tie(NULL);
 
          // language section starts
          string languages = "###Languages:" + linegap3;
-         cout << languages << endl;
+        // cout << languages << endl;
          readme.push_back(languages);
 
          // language section ends
@@ -154,10 +167,10 @@ cin.tie(NULL);
          string githubStats = "### 📈 Github Stats:\n\n\n";
          githubStats += "<a href=\" https:/";
          githubStats+= "/github.com/rajivranjanmars\">\n";
-         githubStats += "<img align=\" center \" src=\" https : //github-readme-stats.vercel.app/api?username=rajivranjanmars&show_icons=true&include_all_commits=true&theme=midnight-purple&count_private=true\"> \n </a>\n" +linegap5;
-         githubStats +="<a href=\"https://github.com/remcohalman/github-readme-stats\">\n<img align=\"center\" src=\"https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=rajivranjanmars&layout=compact&theme=blue-green\" />\n</a> \n\n"+linegap3+linegap5;
-         githubStats += "[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=rajivranjanmars)](https://git.io/streak-stats)\n";
-         cout << githubStats << "\n";
+         githubStats += "<img align=\" center \" src=\" https://github-readme-stats.vercel.app/api?username="+githubUserName+"&show_icons=true&include_all_commits=true&theme=midnight-purple&count_private=true\"> \n </a>\n" ;
+         githubStats +="<a href=\"https://github.com/remcohalman/github-readme-stats\">\n<img align=\"center\" src=\"https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username="+githubUserName+"&show_icons=true&include_all_layout=compact&theme=blue-green\" />\n</a> \n\n"+linegap5;
+         githubStats += "[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user="+githubUserName+")](https://git.io/streak-stats)\n";
+        // cout << githubStats << "\n";
          readme.push_back(githubStats);
          //githubStats section ends
 
