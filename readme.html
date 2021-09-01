@@ -60,20 +60,39 @@
         <input type="text" id="instagramUsername" placeholder="rajivranjanmars" />
 
 
-
-
-
-
-
-
-
-
-
     </form>
     <button onclick="readme()">
         Submit
     </button>
+<br><br><br><br><br><br><br><br><br>
     <script src="index.js" index.js></script>
+    
+    <div class="tooltip">
+        <button onclick="myFunction()" onmouseout="outFunc()">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            Copy text
+        </button>
+    </div>
+    <br> <br>
+    <input type="text"  id="myInput">
+<script>
+    function myFunction() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.value);
+
+        var tooltip = document.getElementById("myTooltip");
+        tooltip.innerHTML = "Copied: " + copyText.value;
+    }
+
+    function outFunc() {
+        var tooltip = document.getElementById("myTooltip");
+        tooltip.innerHTML = "Copy to clipboard";
+    }
+</script>
+
+
 </body>
 
 </html>

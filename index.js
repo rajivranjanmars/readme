@@ -76,7 +76,8 @@ function readme(){
 
 `;
 
-
+var myInput= document.getElementById('myInput');
+myInput.value=markdown
 
     console.log(markdown);
     }
