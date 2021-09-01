@@ -28,7 +28,11 @@ function readme(){
    var goals = document.getElementById("goals").value;
    
    
-   
+   //social media usernames
+   var linkedinUsername= document.getElementById("linkedinUsername").value;
+   var twitterUsername = document.getElementById("twitterUsername").value;
+   var facebookUsername = document.getElementById("facebookUsername").value;
+   var instagramUsername = document.getElementById("instagramUsername").value;
    
    
    
@@ -48,7 +52,10 @@ function readme(){
 
 🕵 Take a look at my repositories and let's get in touch!
 
-
+[![Linkedin Badge](https://img.shields.io/badge/-${linkedinUsername}-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/${linkedinUsername}/)](https://www.linkedin.com/in/${linkedinUsername}/) 
+[![Twitter Badge](https://img.shields.io/badge/-@${twitterUsername}-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/${twitterUsername})](https://twitter.com/${twitterUsername}) 
+[![Facebook Badge](https://img.shields.io/badge/-${facebookUsername}-3b5998?style=flat-square&labelColor=3b5998&logo=facebook&logoColor=white&link=https://www.facebook.com/${facebookUsername})](https://www.facebook.com/${facebookUsername}) 
+[![Instagram Badge](https://img.shields.io/badge/-@${instagramUsername}-E4405F?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/${instagramUsername})](https://www.instagram.com/${instagramUsername}) 
 `;
 
 
