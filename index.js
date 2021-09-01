@@ -18,11 +18,14 @@ function readme(){
    //learn about
    var learnings = document.getElementById("learn").value;
    
+   //collaborate
+   var collab = document.getElementById("collab").value
    
+   //help
+   var helps= document.getElementById("helps").value;
    
-   
-   
-   
+   // goals 
+   var goals = document.getElementById("goals").value;
    
    
    
@@ -39,10 +42,15 @@ function readme(){
 
 - 👨‍🏭 I’m currently pursuing **${study}** 
 - 🏫 I’m currently learning **${learnings}** 
+- 🙌 I’m looking to collaborate on **${collab}**
+- 🤔 I’m looking for help with **${helps}**
+- 🥅 2021 Goals: **${goals}**
 
+🕵 Take a look at my repositories and let's get in touch!
 
 
 `;
+
 
 
     console.log(markdown);
