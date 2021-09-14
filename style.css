@@ -13,7 +13,11 @@ section{
     display: flex;
     flex: 1 0 auto;
 }
-
+@media screen and (max-width: 900px) {
+  section {
+    flex-direction: column;
+  }
+}
 .container{
     width: 450px;
     height: 590px;
