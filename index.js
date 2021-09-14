@@ -40,6 +40,7 @@ function readme(){
     let markdown = `
 ### Hi ,I Am ${nameOfUser}! <img src=" https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px"> <br> <br>
 <br>
+
 ![](https://komarev.com/ghpvc/?username=${GitHubUsername}&color=blue)<br>
 <h3>${aboutMe}</h3><br>
 
