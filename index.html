@@ -8,11 +8,164 @@
     <title>GitHub Profile Readme Generator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icon.png" type="image/png">
-    <script src="=" index.js></script>
 </head>
 
 <body>
-    <a href="readme.html"><button>Enter</button></a>
+    <section>
+        <script src="index.js"></script>
+        <div class="container box1 ">
+            <center>
+                <h3>
+                    This tool is still in beta stage
+                </h3>
+                <h4>
+                    Before starting,Please see the following points
+                </h4>
+                </center>
+                <div class="box2">
+                <ul>
+                        <li>Plz fill all the section</li>
+                        <li>Don't use whitespace in start or end of input</li>
+                        <li>In username, Don't use URL or "@"</li>
+                        <li>If you are faccing issue, Report it <a href="https://github.com/rajivranjanmars/readme">here</a> </li>
+                        <li>If you want to add a feature plz contribute <a href="https://github.com/rajivranjanmars/readme">here</a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="container">
+            <!-- Form 1 -->
+            <form id="Form1">
+                <h3>General Info</h3>
+                <!--Name input-->
+                <p>Enter Your Name</p>
+                <input type="text" id="nameOfUser" placeholder="Enter your name" required />
+
+                <!--GitHub Username-->
+
+                <p>Enter Your GitHub Username</p>
+                <input type="text" id="GitHubUsername" placeholder="rajivranjanmars" required />
+
+
+                <!--Aboutme-->
+                <p>Tell us something about you in one line</p>
+                <input type="text" id="aboutme" placeholder="A budding programmer exploring new fields of development."
+                    required />
+
+
+                <!--place of study-->
+                <p>Course and place of study</p>
+                <input type="text" id="study" placeholder="B.Tech from lovely professional University" required />
+
+
+                <div class="btn-box">
+                    <button type="button" id="Next1">Next</button>
+                </div>
+            </form>
+            <!-- Form 2 -->
+            <form id="Form2">
+                <h3>About You</h3>
+                <!--learning-->
+                <p>What are you learning</p>
+                <input type="text" id="learn" placeholder="Problem Solving & Web Devlopment" required />
+
+                <!--collaboration-->
+                <p>Where you want to collab</p>
+                <input type="text" id="collab" placeholder="Web Devlopment" required />
+
+
+                <!--helps-->
+                <p>Where you need help</p>
+                <input type="text" id="helps" placeholder="Web Devlopment and competitive programming" required />
+
+                <!--Goals-->
+                <p>Upcoming goals of the year</p>
+                <input type="text" id="goals" placeholder="Contribute more  projects & learn new stacks" required />
+
+                <div class="btn-box">
+                    <button type="button" id="Back1">Back</button>
+                    <button type="button" id="Next2">Next</button>
+                </div>
+            </form>
+            <!-- Form 3 -->
+            <form id="Form3">
+                <h3>Social Links</h3>
+                <!--linkedin username-->
+                <p>linkedin username</p>
+                <input type="text" id="linkedinUsername" placeholder="rajivranjanmars" required />
+
+                <!--twitter username-->
+                <p>twitter username</p>
+                <input type="text" id="twitterUsername" placeholder="rajivranjanmars" required />
+
+
+                <!--facebook username-->
+                <p>facebook username</p>
+                <input type="text" id="facebookUsername" placeholder="rajivranjanmars" required />
+
+                <!--instagram username-->
+                <p>instagram username</p>
+                <input type="text" id="instagramUsername" placeholder="rajivranjanmars" required />
+
+                <div class="btn-box">
+                    <button type="button" id="Back2">Back</button>
+                    <button type="button" onclick="readme()">Submit</button>
+                </div>
+            </form>
+
+            <div class="step-row">
+                <div id="progress"> </div>
+                <div class="step-col"><small>Step 1</small></div>
+                <div class="step-col"><small>Step 2</small></div>
+                <div class="step-col"><small>Step 3</small></div>
+            </div>
+        </div>
+    </section>
+
+
 </body>
+
+
+
+<!-- js script -->
+
+<script>
+
+    var Form1 = document.getElementById("Form1");
+    var Form2 = document.getElementById("Form2");
+    var Form3 = document.getElementById("Form3");
+
+    var Next1 = document.getElementById("Next1");
+    var Next2 = document.getElementById("Next2");
+    var Back1 = document.getElementById("Back1");
+    var Back2 = document.getElementById("Back2");
+
+    var progress = document.getElementById("progress");
+
+    Next1.onclick = function () {
+        Form1.style.left = "-550px";
+        Form2.style.left = "50px";
+        progress.style.width = "270px";
+    }
+    Back1.onclick = function () {
+        Form1.style.left = "50px";
+        Form2.style.left = "550px";
+        progress.style.width = "135px";
+    }
+    Next2.onclick = function () {
+        Form2.style.left = "-550px";
+        Form3.style.left = "50px";
+        progress.style.width = "500px";
+    }
+    Back2.onclick = function () {
+        Form2.style.left = "50px";
+        Form3.style.left = "550px";
+        progress.style.width = "250px";
+    }
+
+
+</script>
+
+
+
 
 </html>
