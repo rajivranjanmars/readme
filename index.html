@@ -8,78 +8,88 @@
     <title>GitHub Profile Readme Generator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icon.png" type="image/png">
+    <!--Js File-->
+    <script src="index.js"></script>
+
+    <!--JQuery CDN-->
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js">
+    </script>
+
+    <!-- Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <div class="navbar">
+        <a href="https://github.com/03prashantpk/readme">README.md Code Generator</a>
+    </div>
     <section>
-        <script src="index.js"></script>
-        <div class="container box1 ">
-            <center>
-                <h3>
-                    This tool is still in beta stage
-                </h3>
-                <h4>
-                    Before starting,Please see the following points
-                </h4>
-                </center>
-                <div class="box2">
-                <ul>
-                        <li>Plz fill all the section</li>
-                        <li>Don't use whitespace in start or end of input</li>
-                        <li>In username, Don't use URL or "@"</li>
-                        <li>If you are faccing issue, Report it <a href="https://github.com/rajivranjanmars/readme">here</a> </li>
-                        <li>If you want to add a feature plz contribute <a href="https://github.com/rajivranjanmars/readme">here</a></li>
-                </ul>
-                </div>
-        </div>
         <div class="container">
+
             <!-- Form 1 -->
             <form id="Form1">
-                <h3>General Info</h3>
+                <h3 style="padding: 8px;">Enter General information</h3>
+
                 <!--Name input-->
-                <p>Enter Your Name</p>
-                <input type="text" id="nameOfUser" placeholder="Enter your name" required />
+                <div class="paddingPK">
+                    <p>Enter Your Name</p>
+                    <input type="text" id="nameOfUser" placeholder="Enter your name" required>
+                </div>
+
 
                 <!--GitHub Username-->
+                <div class="paddingPK">
+                    <p>Enter Your GitHub Username</p>
+                    <input type="text" id="GitHubUsername" placeholder="johndeo" required>
+                </div>
 
-                <p>Enter Your GitHub Username</p>
-                <input type="text" id="GitHubUsername" placeholder="rajivranjanmars" required />
-
-
-                <!--Aboutme-->
-                <p>Tell us something about you in one line</p>
-                <input type="text" id="aboutme" placeholder="A budding programmer exploring new fields of development."
-                    required />
+                <div class="paddingPK">
+                    <!--Aboutme-->
+                    <p>Tell us something about you in one line</p>
+                    <input type="text" id="aboutme" placeholder="A budding programmer exploring new fields of development." required>
+                </div>
 
 
                 <!--place of study-->
-                <p>Course and place of study</p>
-                <input type="text" id="study" placeholder="B.Tech from lovely professional University" required />
-
+                <div class="paddingPK">
+                    <p>Course and place of study</p>
+                    <input type="text" id="study" placeholder="B.Tech from lovely professional University" required>
+                </div>
 
                 <div class="btn-box">
                     <button type="button" id="Next1">Next</button>
                 </div>
+
             </form>
+
             <!-- Form 2 -->
             <form id="Form2">
                 <h3>About You</h3>
+
                 <!--learning-->
-                <p>What are you learning</p>
-                <input type="text" id="learn" placeholder="Problem Solving & Web Devlopment" required />
+                <div class="paddingPK">
+                    <p>What are you learning</p>
+                    <input type="text" id="learn" placeholder="Problem Solving & Web Devlopment" required />
+                </div>
 
                 <!--collaboration-->
-                <p>Where you want to collab</p>
-                <input type="text" id="collab" placeholder="Web Devlopment" required />
+                <div class="paddingPK">
+                    <p>Where you want to collab</p>
+                    <input type="text" id="collab" placeholder="Web Devlopment" required />
+                </div>
 
 
                 <!--helps-->
-                <p>Where you need help</p>
-                <input type="text" id="helps" placeholder="Web Devlopment and competitive programming" required />
+                <div class="paddingPK">
+                    <p>Where you need help</p>
+                    <input type="text" id="helps" placeholder="Web Devlopment and competitive programming" required />
+                </div>
 
                 <!--Goals-->
-                <p>Upcoming goals of the year</p>
-                <input type="text" id="goals" placeholder="Contribute more  projects & learn new stacks" required />
+                <div class="paddingPK">
+                    <p>Upcoming goals of the year</p>
+                    <input type="text" id="goals" placeholder="Contribute more  projects & learn new stacks" required />
+                </div>
 
                 <div class="btn-box">
                     <button type="button" id="Back1">Back</button>
@@ -90,21 +100,36 @@
             <form id="Form3">
                 <h3>Social Links</h3>
                 <!--linkedin username-->
-                <p>linkedin username</p>
-                <input type="text" id="linkedinUsername" placeholder="rajivranjanmars" required />
+                <div class="paddingPK">
+                    <p>Linkedin Username <i class="fa fa-info-circle tooltip"> <span class="tooltiptext">Do not use "@".
+                                If
+                                your Username doesn't contain any.</span></i></p>
+                    <input type="text" id="linkedinUsername" placeholder="johndeo" required />
+                </div>
 
                 <!--twitter username-->
-                <p>twitter username</p>
-                <input type="text" id="twitterUsername" placeholder="rajivranjanmars" required />
+                <div class="paddingPK">
+                    <p>Twitter Username <i class="fa fa-info-circle tooltip"> <span class="tooltiptext">Do not use "@".
+                                If
+                                your Username doesn't contain any.</span></i></p>
+                    <input type="text" id="twitterUsername" placeholder="johndeo" required />
 
 
-                <!--facebook username-->
-                <p>facebook username</p>
-                <input type="text" id="facebookUsername" placeholder="rajivranjanmars" required />
+                    <!--facebook username-->
+                    <div class="paddingPK">
+                        <p>Facebook Username <i class="fa fa-info-circle tooltip"> <span class="tooltiptext">Do not use
+                                    "@". If
+                                    your Username doesn't contain any.</span></i></p>
+                        <input type="text" id="facebookUsername" placeholder="johndeo" required />
+                    </div>
 
-                <!--instagram username-->
-                <p>instagram username</p>
-                <input type="text" id="instagramUsername" placeholder="rajivranjanmars" required />
+                    <!--instagram username-->
+                    <div class="paddingPK"></div>
+                    <p>Instagram Username <i class="fa fa-info-circle tooltip"> <span class="tooltiptext">Do not use
+                                "@". If
+                                your Username doesn't contain any.</span></i></p>
+                    <input type="text" id="instagramUsername" placeholder="johndeo" required />
+                </div>
 
                 <div class="btn-box">
                     <button type="button" id="Back2">Back</button>
@@ -118,10 +143,17 @@
                 <div class="step-col"><small>Step 2</small></div>
                 <div class="step-col"><small>Step 3</small></div>
             </div>
+            <p style="text-align: center; color: tomato;"><i class="fa fa-info-circle tooltip">
+                    <span class="tooltiptext">
+                        All fields are mandatory, else you will be getting error on markdown code.
+                    </span></i> All fields are mandatory </p>
         </div>
     </section>
 
-
+    <a class="float2" href="https://www.linkedin.com/in/03prashantpk/" target="_blank">
+        <!--<i class="fa fa-coffee" style="color: #fff;" aria-hidden="true"></i>-->
+        <img src="https://i.pinimg.com/originals/de/b4/6f/deb46f02a59e3b3a2aa58fac16290d63.gif" style=" width:60px; height:60px; border-radius: 50%;" alt="">
+    </a>
 </body>
 
 
@@ -129,7 +161,6 @@
 <!-- js script -->
 
 <script>
-
     var Form1 = document.getElementById("Form1");
     var Form2 = document.getElementById("Form2");
     var Form3 = document.getElementById("Form3");
@@ -141,31 +172,36 @@
 
     var progress = document.getElementById("progress");
 
-    Next1.onclick = function () {
+    Next1.onclick = function() {
         Form1.style.left = "-550px";
         Form2.style.left = "50px";
         progress.style.width = "270px";
     }
-    Back1.onclick = function () {
+    Back1.onclick = function() {
         Form1.style.left = "50px";
         Form2.style.left = "550px";
         progress.style.width = "135px";
     }
-    Next2.onclick = function () {
+    Next2.onclick = function() {
         Form2.style.left = "-550px";
         Form3.style.left = "50px";
         progress.style.width = "500px";
     }
-    Back2.onclick = function () {
+    Back2.onclick = function() {
         Form2.style.left = "50px";
         Form3.style.left = "550px";
         progress.style.width = "250px";
     }
-
-
 </script>
 
-
-
+<!-- Remove White Space from input-->
+<script>
+    $(function() {
+        $('input').blur(function() {
+            $(this).val($.trim($(this).val()));
+        });
+    });
+</script>
+<!--https://github.com/03prashantpk-->
 
 </html>

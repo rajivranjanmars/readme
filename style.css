@@ -1,117 +1,128 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
-body{
-    background-image: linear-gradient(rgba(162, 0, 255, 0.8),rgba(247, 0, 255, 0.8));
-    background-position: center;
+body {
+    /*background-image: linear-gradient(rgba(162, 0, 255, 0.8),rgba(247, 0, 255, 0.8));*/
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(https://wallpaperaccess.com/full/3415037.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    height: 100hv;
 }
-section{
+
+section {
     display: flex;
     flex: 1 0 auto;
 }
+
 @media screen and (max-width: 900px) {
-  section {
-    flex-direction: column;
-  }
-}
-.container{
-    width: 450px;
-    height: 590px;
-    margin: 8% auto;
-    background:#fff;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 1px 5px 1px #000  ;
+    section {
+        flex-direction: column;
+    }
 }
 
-h3{
-    text-align: center;
-    margin-bottom: 40px;
-    color: #777;
+.container {
+    width: 450px;
+    height: 600px;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 10px 10px 66px -12px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 10px 10px 66px -12px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 10px 10px 66px -12px rgba(0, 0, 0, 0.74);
 }
- 
-.container form{
-    width: 280px;
+
+h3 {
+    margin-bottom: 40px;
+    color: #FF4143;
+}
+
+.container form {
+    width: 100%;
     position: absolute;
     top: 100px;
     left: 40px;
     transition: 0.5s;
 }
-p{
+
+p {
     width: 100%;
     padding: 5px 2px;
     margin: 5px auto;
 }
 
-form input{
+form input {
     width: 100%;
-    padding:10px 5px ;
+    padding: 10px 5px;
     margin: 5px 0;
     border: 0;
-    border-bottom:1px solid #999;
+    border-bottom: 1px solid #999;
     outline: none;
-    background:transparent ;
+    background: transparent;
 }
 
-::placeholder{
+::placeholder {
     color: #777;
 }
 
-.btn-box{
+.btn-box {
     width: 100%;
     margin: 30px auto;
     text-align: center;
 }
 
-form button{
+form button {
     width: 110px;
     height: 35px;
     margin: 0 10px;
-    background: linear-gradient(to right, #ff105f,#ff105f,#ffad06);
+    background: linear-gradient(to right, #ff105f, #ff105f, #ffad06);
     border-radius: 30px;
-    border:0 ;
+    border: 0;
     outline: none;
     color: #fff;
     cursor: pointer;
 }
 
-#Form2{
-    left: 550px;
-}
-#Form3{
+#Form2 {
     left: 550px;
 }
 
-.step-row{
+#Form3 {
+    left: 550px;
+}
+
+.step-row {
     width: 460px;
     height: 50px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    box-shadow: 0 -1px 5px -1px #000 ;
+    box-shadow: 0 -1px 5px -1px #000;
     position: relative;
 }
 
-.step-col{
+.step-col {
     width: 220px;
     text-align: center;
     color: #333;
     position: relative;
 }
-#progress{
+
+#progress {
     position: absolute;
     height: 100%;
     width: 140px;
-    background: linear-gradient(to right, #ff105f,#ff105f,#ffad06);
+    background: linear-gradient(to right, #ff105f, #ff105f, #ffad06);
     transition: 1s;
 }
 
-#progress::after{
+#progress::after {
     content: '';
     height: 0;
     width: 0;
@@ -123,11 +134,192 @@ form button{
     border-left: 20px solid #ffad06;
 }
 
-.box1{
- 
- color:#777
- 
+.box1 {
+    color: #777
 }
-.box2{
-  padding:50px;
+
+.box2 {
+    padding: 50px;
+}
+
+#form1 {
+    width: 100%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.863);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 40%;
+    margin-left: -50px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip {
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    padding-right: 40px;
+}
+
+.paddingPK {
+    width: 80%;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #FF682D;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 10px 10px 66px -12px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 10px 10px 66px -12px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 10px 10px 66px -12px rgba(0, 0, 0, 0.74);
+}
+
+.navbar a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    background: #1C7A95;
+    color: black;
+}
+
+.float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 30px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    z-index: 100;
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 3.8s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.my-float {
+    margin-top: 10px;
+}
+
+.float2 {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    left: 30px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    z-index: 100;
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 4.8s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
