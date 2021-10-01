@@ -37,12 +37,12 @@ function readme() {
 
 
     let markdown = `
-# Hi ,I Am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px"> <br> <br>
+# Hi ,I Am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
 <br>
 
 ![](https://komarev.com/ghpvc/?username=${GitHubUsername}&color=blue)<br>
 
-<h3>### ${aboutMe}</h3><br>
+### ${aboutMe}<br>
 
 - 👨‍🏭 I’m currently pursuing **${study}** <br>
 - 🏫 I’m currently learning **${learnings}** <br>
@@ -51,13 +51,8 @@ function readme() {
 - 🥅 2021 Goals: **${goals}** <br>
 
 
-🕵 Take a look at my repositories and let's get in touch!<br>
+### 🕵 Take a look at my repositories and let's get in touch!<br>
 
-<br/>
-
-### You can connect me through:
-
-<hr/>
 
 [![Linkedin Badge](https://img.shields.io/badge/-${linkedinUsername}-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/${linkedinUsername}/)](https://www.linkedin.com/in/${linkedinUsername}/) 
 [![Twitter Badge](https://img.shields.io/badge/-@${twitterUsername}-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/${twitterUsername})](https://twitter.com/${twitterUsername}) 
@@ -67,7 +62,7 @@ function readme() {
 
 ### 📈 Github Stats:
 
-<hr/>
+
 <br>
 <a href="https://github.com/${GitHubUsername}">
 <img align="center" src="https://github-readme-stats.vercel.app/api?username=${GitHubUsername}&show_icons=true&include_all_commits=true&theme=midnight-purple&count_private=true">

@@ -29,7 +29,7 @@ section {
     width: 450px;
     height: 600px;
     margin: 8% auto;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.973);
     border-radius: 12px;
     position: relative;
     overflow: hidden;
@@ -40,7 +40,7 @@ section {
 
 h3 {
     margin-bottom: 40px;
-    color: #FF4143;
+    color: #f04446;
 }
 
 .container form {
@@ -62,7 +62,7 @@ form input {
     padding: 10px 5px;
     margin: 5px 0;
     border: 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid rgb(168, 167, 167);
     outline: none;
     background: transparent;
 }
@@ -81,7 +81,7 @@ form button {
     width: 110px;
     height: 35px;
     margin: 0 10px;
-    background: linear-gradient(to right, #ff105f, #ff105f, #ffad06);
+    background: linear-gradient(to right, #fc1763, #fc115f, #ffab04);
     border-radius: 30px;
     border: 0;
     outline: none;
@@ -118,7 +118,7 @@ form button {
     position: absolute;
     height: 100%;
     width: 140px;
-    background: linear-gradient(to right, #ff105f, #ff105f, #ffad06);
+    background: linear-gradient(to right, #f0105a, #e71058, #faab0d);
     transition: 1s;
 }
 
@@ -181,7 +181,8 @@ h2 {
     padding-right: 40px;
 }
 
-.paddingPK {
+
+.padding80 {
     width: 80%;
 }
 
