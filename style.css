@@ -12,6 +12,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100hv;
+    overflow: hidden;
 }
 
 section {
