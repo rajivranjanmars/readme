@@ -68,10 +68,15 @@ form input {
     background: transparent;
 }
 
+#Form1 .btn-box {
+    width: 100%;
+    margin: 25px 90px;
+    text-align: center;
+}
+
 .btn-box {
     width: 100%;
-    margin: 30px auto;
-    text-align: center;
+    margin: 41px 120px;
 }
 
 form button {
