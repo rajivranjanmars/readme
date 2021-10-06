@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100hv;
+    overflow: hidden;
 }
 
 section {
@@ -39,8 +40,11 @@ section {
 }
 
 h3 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
     color: #f04446;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
 }
 
 .container form {
@@ -53,28 +57,27 @@ h3 {
 
 p {
     width: 100%;
-    padding: 5px 2px;
-    margin: 5px auto;
+    margin-top: 30px; 
 }
 
 form input {
     width: 100%;
-    padding: 10px 5px;
-    margin: 5px 0;
+    margin-top: 12px;
     border: 0;
     border-bottom: 1px solid rgb(168, 167, 167);
     outline: none;
     background: transparent;
 }
 
-::placeholder {
-    color: #777;
+#Form1 .btn-box {
+    width: 100%;
+    margin: 70px 90px;
+    text-align: center;
 }
 
 .btn-box {
     width: 100%;
-    margin: 30px auto;
-    text-align: center;
+    margin: 70px 120px;
 }
 
 form button {
@@ -134,18 +137,6 @@ form button {
     border-left: 20px solid #ffad06;
 }
 
-.box1 {
-    color: #777
-}
-
-.box2 {
-    padding: 50px;
-}
-
-#form1 {
-    width: 100%;
-}
-
 .tooltip {
     position: relative;
     display: inline-block;
@@ -159,7 +150,7 @@ form button {
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 8px 0;
+    padding: 8px;
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
@@ -174,11 +165,6 @@ form button {
 
 .tooltip {
     color: red;
-}
-
-h2 {
-    text-align: center;
-    padding-right: 40px;
 }
 
 
@@ -211,24 +197,6 @@ h2 {
 .navbar a:hover {
     background: #1C7A95;
     color: black;
-}
-
-.float {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 50px;
-    right: 30px;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 28px;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-    z-index: 100;
-    /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: shake 3.8s;
-    /* When the animation is finished, start again */
-    animation-iteration-count: infinite;
 }
 
 @keyframes shake {
@@ -265,10 +233,6 @@ h2 {
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
     }
-}
-
-.my-float {
-    margin-top: 10px;
 }
 
 .float2 {
