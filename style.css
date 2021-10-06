@@ -40,7 +40,6 @@ section {
 }
 
 h3 {
-    margin-bottom: 20px;
     margin-top: 10px;
     color: #f04446;
     font-family: 'DM Sans', sans-serif;
@@ -62,22 +61,47 @@ p {
 
 form input {
     width: 100%;
-    margin-top: 12px;
     border: 0;
-    border-bottom: 1px solid rgb(168, 167, 167);
     outline: none;
     background: transparent;
 }
 
+label {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+.fields {
+    color: #646c70;
+    border-bottom: 1px solid #019fb6;
+    /* margin-bottom: -1px; */
+    outline: none;
+    width: 100%;
+    padding-top: 10px;
+}
+.fields + span {
+    display: block;
+    border-bottom: solid 2.3px #019fb6;
+    margin-top: -1px;
+    width: 0;
+    -webkit-transition: width 250ms ease-in-out;
+    transition: width 250ms ease-in-out;
+}
+.fields:focus + span {
+    width: 100%;
+    -webkit-transition: width 250ms ease-in-out;
+    transition: width 250ms ease-in-out;
+}
+
 #Form1 .btn-box {
     width: 100%;
-    margin: 70px 90px;
+    margin: 45px 90px;
     text-align: center;
 }
 
 .btn-box {
     width: 100%;
-    margin: 70px 120px;
+    margin: 45px 120px;
 }
 
 form button {
@@ -184,6 +208,7 @@ form button {
 }
 
 .navbar a {
+    transition: 0.3s;
     display: block;
     color: #fff;
     text-align: center;
@@ -195,6 +220,7 @@ form button {
 }
 
 .navbar a:hover {
+    transition: 0.3s;
     background: #1C7A95;
     color: black;
 }
