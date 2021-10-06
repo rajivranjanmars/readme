@@ -74,14 +74,15 @@ label {
 .fields {
     color: #646c70;
     border-bottom: 1px solid #019fb6;
-    margin-bottom: -1px;
+    /* margin-bottom: -1px; */
     outline: none;
     width: 100%;
     padding-top: 10px;
 }
 .fields + span {
     display: block;
-    border-bottom: solid 2.5px #019fb6;
+    border-bottom: solid 2.3px #019fb6;
+    margin-top: -1px;
     width: 0;
     -webkit-transition: width 250ms ease-in-out;
     transition: width 250ms ease-in-out;
