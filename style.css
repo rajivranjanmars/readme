@@ -62,11 +62,35 @@ p {
 
 form input {
     width: 100%;
-    margin-top: 12px;
     border: 0;
-    border-bottom: 1px solid rgb(168, 167, 167);
     outline: none;
     background: transparent;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+.fields {
+    color: #646c70;
+    border-bottom: 1px solid #019fb6;
+    margin-bottom: -1px;
+    outline: none;
+    width: 100%;
+    padding-top: 10px;
+}
+.fields + span {
+    display: block;
+    border-bottom: solid 2.5px #019fb6;
+    width: 0;
+    -webkit-transition: width 250ms ease-in-out;
+    transition: width 250ms ease-in-out;
+}
+.fields:focus + span {
+    width: 100%;
+    -webkit-transition: width 250ms ease-in-out;
+    transition: width 250ms ease-in-out;
 }
 
 #Form1 .btn-box {
