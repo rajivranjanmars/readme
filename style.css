@@ -40,7 +40,6 @@ section {
 }
 
 h3 {
-    margin-bottom: 20px;
     margin-top: 10px;
     color: #f04446;
     font-family: 'DM Sans', sans-serif;
@@ -95,13 +94,13 @@ label {
 
 #Form1 .btn-box {
     width: 100%;
-    margin: 70px 90px;
+    margin: 45px 90px;
     text-align: center;
 }
 
 .btn-box {
     width: 100%;
-    margin: 70px 120px;
+    margin: 45px 120px;
 }
 
 form button {
