@@ -184,6 +184,7 @@ form button {
 }
 
 .navbar a {
+    transition: 0.3s;
     display: block;
     color: #fff;
     text-align: center;
@@ -195,6 +196,7 @@ form button {
 }
 
 .navbar a:hover {
+    transition: 0.3s;
     background: #1C7A95;
     color: black;
 }
