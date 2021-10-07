@@ -1,42 +1,25 @@
+// ============================================================
+//                      README
+// ============================================================
 function readme() {
+  // ========================== Personal infos ===============================
+  const nameOfUser = document.getElementById('nameOfUser').value, //name
+    GitHubUsername = document.getElementById('GitHubUsername').value, //github username
+    aboutMe = document.getElementById('aboutme').value, //about me
+    study = document.getElementById('study').value, //course and college
+    learnings = document.getElementById('learn').value, //learn about
+    collab = document.getElementById('collab').value, //collaborate
+    helps = document.getElementById('helps').value, //help
+    goals = document.getElementById('goals').value; // goals
 
-    //name
-    var nameOfUser = document.getElementById("nameOfUser").value;
+  //====================== social media usernames =============================
+  const linkedinUsername = document.getElementById('linkedinUsername').value,
+    twitterUsername = document.getElementById('twitterUsername').value,
+    facebookUsername = document.getElementById('facebookUsername').value,
+    instagramUsername = document.getElementById('instagramUsername').value;
 
-    //github username
-    var GitHubUsername = document.getElementById("GitHubUsername").value;
-
-    //about me
-    var aboutMe = document.getElementById("aboutme").value
-
-
-    //course and college
-    var study = document.getElementById("study").value;
-
-    //learn about
-    var learnings = document.getElementById("learn").value;
-
-    //collaborate
-    var collab = document.getElementById("collab").value
-
-    //help
-    var helps = document.getElementById("helps").value;
-
-    // goals 
-    var goals = document.getElementById("goals").value;
-
-
-    //social media usernames
-    var linkedinUsername = document.getElementById("linkedinUsername").value;
-    var twitterUsername = document.getElementById("twitterUsername").value;
-    var facebookUsername = document.getElementById("facebookUsername").value;
-    var instagramUsername = document.getElementById("instagramUsername").value;
-
-
-
-
-
-    let markdown = `
+  // ========================== Formation of output ===============================
+  let markdown = `
 # Hi ,I Am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
 <br>
 
@@ -77,18 +60,20 @@ function readme() {
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=${GitHubUsername})](https://git.io/streak-stats)
 
 `;
-    console.log(markdown);
-    copyToClipboard(markdown);
-    alert("Your readme code is copied to the clipboard");
-
+  // ========================== Outputing Results ===============================
+  console.log(markdown);
+  copyToClipboard(markdown);
+  alert('Your readme code is copied to the clipboard');
 }
 
-
+// ============================================================
+//                    COPYTOCLIPBOARD
+// ============================================================
 function copyToClipboard(text) {
-    var dummy = document.createElement("textarea");
-    document.body.appendChild(dummy);
-    dummy.value = text;
-    dummy.select();
-    document.execCommand("copy");
-    document.body.removeChild(dummy);
+  const dummy = document.createElement('textarea');
+  document.body.appendChild(dummy);
+  dummy.value = text;
+  dummy.select();
+  document.execCommand('copy');
+  document.body.removeChild(dummy);
 }
