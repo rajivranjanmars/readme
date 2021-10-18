@@ -31,6 +31,7 @@ function readme() {
     var twitterUsername = document.getElementById("twitterUsername").value;
     var facebookUsername = document.getElementById("facebookUsername").value;
     var instagramUsername = document.getElementById("instagramUsername").value;
+    var currentTheme = localStorage.getItem('theme');
 
 
 
@@ -77,6 +78,7 @@ function readme() {
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=${GitHubUsername})](https://git.io/streak-stats)
 
 `;
+    console.log(currentTheme);
     console.log(markdown);
     copyToClipboard(markdown);
     alert("Your readme code is copied to the clipboard");
@@ -92,3 +94,4 @@ function copyToClipboard(text) {
     document.execCommand("copy");
     document.body.removeChild(dummy);
 }
+
