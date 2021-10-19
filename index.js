@@ -35,6 +35,7 @@ function readme() {
 
     //dark theme
     if(currentTheme == "dark"){
+        var message = "Your readme code is copied to the clipboard. Since you have chosen dark theme, enable darkmode in GitHub.";
         var markdown = `
 
 <div style="background-color:#121212">
@@ -86,6 +87,7 @@ function readme() {
 
     //light theme
     else{
+        var message = "Your readme code is copied to the clipboard.";
         var markdown = `
 # Hi ,I Am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
 <br>
@@ -132,7 +134,7 @@ function readme() {
     console.log(currentTheme);
     console.log(markdown);
     copyToClipboard(markdown);
-    alert("Your readme code is copied to the clipboard");
+    alert(message);
 
 }
 
