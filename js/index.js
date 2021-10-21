@@ -1,42 +1,30 @@
+// ===========================================================================
+//                                  README
+// ===========================================================================
 function readme() {
+  // ========================== Personal infos ===============================
+  const nameOfUser = document.getElementById('nameOfUser').value, //name
+    GitHubUsername = document.getElementById('GitHubUsername').value, //github username
+    aboutMe = document.getElementById('aboutme').value, //about me
+    study = document.getElementById('study').value, //course and college
+    learnings = document.getElementById('learn').value, //learn about
+    collab = document.getElementById('collab').value, //collaborate
+    helps = document.getElementById('helps').value, //help
+    goals = document.getElementById('goals').value; // goals
 
-    //name
-    var nameOfUser = document.getElementById("nameOfUser").value;
+  //====================== social media usernames =============================
+  const linkedinUsername = document.getElementById('linkedinUsername').value,
+    twitterUsername = document.getElementById('twitterUsername').value,
+    facebookUsername = document.getElementById('facebookUsername').value,
+    instagramUsername = document.getElementById('instagramUsername').value,
+    currentTheme = localStorage.getItem('theme');
 
-    //github username
-    var GitHubUsername = document.getElementById("GitHubUsername").value;
-
-    //about me
-    var aboutMe = document.getElementById("aboutme").value
-
-
-    //course and college
-    var study = document.getElementById("study").value;
-
-    //learn about
-    var learnings = document.getElementById("learn").value;
-
-    //collaborate
-    var collab = document.getElementById("collab").value
-
-    //help
-    var helps = document.getElementById("helps").value;
-
-    // goals 
-    var goals = document.getElementById("goals").value;
-
-
-    //social media usernames
-    var linkedinUsername = document.getElementById("linkedinUsername").value;
-    var twitterUsername = document.getElementById("twitterUsername").value;
-    var facebookUsername = document.getElementById("facebookUsername").value;
-    var instagramUsername = document.getElementById("instagramUsername").value;
-    var currentTheme = localStorage.getItem('theme');
-
-    //dark theme
-    if(currentTheme == "dark"){
-        var message = "Your readme code is copied to the clipboard. Since you have chosen dark theme, enable darkmode in GitHub.";
-        var markdown = `
+  //dark theme
+  if (currentTheme == 'dark') {
+    // ========================== Formation of output ===============================
+    var message =
+      'Your readme code is copied to the clipboard. Since you have chosen dark theme, enable darkmode in GitHub.';
+    var markdown = `
 
 <div style="background-color:#121212">
 <div style="color:#fff">
@@ -83,12 +71,13 @@ function readme() {
 </div>
 
 `;
-    }
+  }
 
-    //light theme
-    else{
-        var message = "Your readme code is copied to the clipboard.";
-        var markdown = `
+  //light theme
+  else {
+    // ========================== Formation of output ===============================
+    var message = 'Your readme code is copied to the clipboard.';
+    var markdown = `
 # Hi ,I Am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
 <br>
 
@@ -129,21 +118,22 @@ function readme() {
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=${GitHubUsername})](https://git.io/streak-stats)
 
 `;
-    }
-    
-    console.log(currentTheme);
-    console.log(markdown);
-    copyToClipboard(markdown);
-    alert(message);
-
+  }
+  // ========================== Outputing Results ===============================
+  console.log(currentTheme);
+  console.log(markdown);
+  copyToClipboard(markdown);
+  alert(message);
 }
 
+// ============================================================
+//                    COPYTOCLIPBOARD
+// ============================================================
 function copyToClipboard(text) {
-    var dummy = document.createElement("textarea");
-    document.body.appendChild(dummy);
-    dummy.value = text;
-    dummy.select();
-    document.execCommand("copy");
-    document.body.removeChild(dummy);
+  var dummy = document.createElement('textarea');
+  document.body.appendChild(dummy);
+  dummy.value = text;
+  dummy.select();
+  document.execCommand('copy');
+  document.body.removeChild(dummy);
 }
-
