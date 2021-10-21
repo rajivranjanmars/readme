@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 body {
@@ -43,7 +43,7 @@ section {
 h3 {
   margin-top: 10px;
   color: #f04446;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
 }
 
@@ -58,6 +58,19 @@ h3 {
 p {
   width: 100%;
   margin-top: 20px;
+}
+p.message {
+  text-align: center;
+  color: tomato;
+  padding-top: 15px;
+  margin-top: 0;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
 }
 
 form input {
@@ -151,7 +164,7 @@ form button {
 }
 
 #progress::after {
-  content: "";
+  content: '';
   height: 0;
   width: 0;
   border-top: 25px solid transparent;
@@ -192,7 +205,7 @@ form button {
   color: red;
 }
 
-.padding80 {
+.padding {
   width: 80%;
 }
 
@@ -358,7 +371,7 @@ form button {
 .slider:before {
   background-color: #fff;
   bottom: 4px;
-  content: "";
+  content: '';
   height: 20px;
   left: 4px;
   position: absolute;
