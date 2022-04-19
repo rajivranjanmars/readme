@@ -89,7 +89,7 @@ function readme() {
 - 🏫 I’m currently learning **${learnings}** <br>
 - 🙌 I’m looking to collaborate on **${collab}** <br>
 - 🤔 I’m looking for help with **${helps}**<br>
-- 🥅 2021 Goals: **${goals}** <br>
+- 🥅 Upcoming Goals: **${goals}** <br>
 
 
 ### 🕵 Take a look at my repositories and let's get in touch!<br>
