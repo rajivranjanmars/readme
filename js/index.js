@@ -13,11 +13,12 @@ function readme() {
     goals = document.getElementById('goals').value; // goals
 
   //====================== social media usernames =============================
-  const linkedinUsername = document.getElementById('linkedinUsername').value,
+  const linkedinUsername = document.getElementById('linkedinUsername').value.replace("-", ""),
     twitterUsername = document.getElementById('twitterUsername').value,
     facebookUsername = document.getElementById('facebookUsername').value,
     instagramUsername = document.getElementById('instagramUsername').value,
     currentTheme = localStorage.getItem('theme');
+
 
   //dark theme
   if (currentTheme == 'dark') {
@@ -28,7 +29,7 @@ function readme() {
 
 <div style="background-color:#121212">
 <div style="color:#fff">
-# Hi ,I Am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
+# Hi ,I am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
 <br>
 
 ![](https://komarev.com/ghpvc/?username=${GitHubUsername}&color=blue)<br>
@@ -78,7 +79,7 @@ function readme() {
     // ========================== Formation of output ===============================
     var message = 'Your readme code is copied to the clipboard.';
     var markdown = `
-# Hi ,I Am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
+# Hi ,I am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
 <br>
 
 ![](https://komarev.com/ghpvc/?username=${GitHubUsername}&color=blue)<br>
