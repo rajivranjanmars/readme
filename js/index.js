@@ -29,7 +29,7 @@ function readme() {
 
 <div style="background-color:#121212">
 <div style="color:#fff">
-# Hi ,I Am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
+# Hi ,I am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
 <br>
 
 ![](https://komarev.com/ghpvc/?username=${GitHubUsername}&color=blue)<br>
@@ -79,7 +79,7 @@ function readme() {
     // ========================== Formation of output ===============================
     var message = 'Your readme code is copied to the clipboard.';
     var markdown = `
-# Hi ,I Am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
+# Hi ,I am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
 <br>
 
 ![](https://komarev.com/ghpvc/?username=${GitHubUsername}&color=blue)<br>
