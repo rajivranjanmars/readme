@@ -13,11 +13,12 @@ function readme() {
     goals = document.getElementById('goals').value; // goals
 
   //====================== social media usernames =============================
-  const linkedinUsername = document.getElementById('linkedinUsername').value,
+  const linkedinUsername = document.getElementById('linkedinUsername').value.replace("-", ""),
     twitterUsername = document.getElementById('twitterUsername').value,
     facebookUsername = document.getElementById('facebookUsername').value,
     instagramUsername = document.getElementById('instagramUsername').value,
     currentTheme = localStorage.getItem('theme');
+
 
   //dark theme
   if (currentTheme == 'dark') {
