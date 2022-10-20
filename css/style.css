@@ -16,6 +16,16 @@ body {
   overflow: hidden;
 }
 
+.required-input{
+  display:flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.astrick-req{
+  color: red !important;
+}
+
 section {
   display: flex;
   justify-content: center;
@@ -57,7 +67,7 @@ p {
   margin-top: 20px;
 }
 p.message {
-  text-align: center;
+  text-align: right;
   color: tomato;
   padding-top: 15px;
   margin-top: 0;
