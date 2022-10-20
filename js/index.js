@@ -11,7 +11,11 @@ function readme() {
     collab = document.getElementById('collab').value, //collaborate
     helps = document.getElementById('helps').value, //help
     goals = document.getElementById('goals').value; // goals
-
+    
+  // ========================== Button customisations =================================
+  const buttonColor = document.getElementById('buttonColor').value.slice(1), //button color
+    buttonType = document.getElementById('buttonType').value //button type
+  const buttonURL = `https://komarev.com/ghpvc/?username=${GitHubUsername}&color=${buttonColor}&style=${buttonType}`
   //====================== social media usernames =============================
   const linkedinUsername = document.getElementById('linkedinUsername').value.replace("-", ""),
     twitterUsername = document.getElementById('twitterUsername').value,
@@ -32,7 +36,7 @@ function readme() {
 # Hi ,I am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
 <br>
 
-![](https://komarev.com/ghpvc/?username=${GitHubUsername}&color=blue)<br>
+![](${buttonURL})<br>
 
 ### ${aboutMe}<br>
 
@@ -82,7 +86,7 @@ function readme() {
 # Hi ,I am ${nameOfUser}! <img src="https://raw.githubusercontent.com/debdutgoswami/debdutgoswami/master/assets/gifs/Hi.gif" width="30px">
 <br>
 
-![](https://komarev.com/ghpvc/?username=${GitHubUsername}&color=blue)<br>
+![](${buttonURL})<br>
 
 ### ${aboutMe}<br>
 
