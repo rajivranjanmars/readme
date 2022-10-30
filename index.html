@@ -37,12 +37,16 @@
                             class="fa fa-info-circle tooltip">
                             <span class="tooltiptext">
                                 All fields are mandatory, else you will get error in the markdown code.
-                            </span></i> All fields are mandatory
+                            </span></i> Mandatory field
                     </p>
                     <!--Name input-->
                     <div class="padding">
                         <label>
-                            <p>Your Name</p>
+                            <p class="required-input">Your Name
+                                <span class="astrick-req">
+                                    *
+                                </span> 
+                            </p>
                             <input class="fields" type="text" id="nameOfUser" placeholder="John Doe" required>
                             <span></span>
                         </label>
@@ -50,7 +54,11 @@
                     <!--GitHub Username-->
                     <div class="padding">
                         <label>
-                            <p>GitHub Username</p>
+                            <p class="required-input">GitHub Username
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
                             <input class="fields" type="text" id="GitHubUsername" placeholder="johndoe" required>
                             <span></span>
                         </label>
@@ -58,7 +66,11 @@
                     <div class="padding">
                         <label>
                             <!--Aboutme-->
-                            <p>Something About You in a Single Line</p>
+                            <p class="required-input">Something About You in a Single Line
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
                             <input class="fields" type="text" id="aboutme"
                                 placeholder="A budding programmer exploring new fields of development." required>
                             <span></span>
@@ -67,16 +79,50 @@
                     <!--place of study-->
                     <div class="padding">
                         <label>
-                            <p>Course & Place of Study</p>
+                            <p class="required-input">Course & Place of Study
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
                             <input class="fields" type="text" id="study"
                                 placeholder="B.Tech from Lovely Professional University" required>
                             <span></span>
                         </label>
                     </div>
+                    <!--Button Color-->
+                    <div class="padding">
+                        <label>
+                            <p class="required-input">Button Color
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
+                            <input class="fields" type="color" id="buttonColor" required>
+                            <span></span>
+                        </label>
+                    </div>
+
+                    <!--Button Type-->
+                    <div>
+                        <label>
+                            <p class="required-input">Button Type
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
+                            <select class="fields" id="buttonType" required>
+                                <option value="flat">Flat</option>
+                                <option value="3d">Flat Square</option>
+                                <option value="plastic">Rounded</option>
+                                <option value="for-the-badge">For The Badge</option>
+                            </select>
+                        </label>
+                    </div>
+
                     <!--choose theme-->
                     <div class="padding">
                         <label>
-                            <p>Choose Theme</p>
+                            <p class="required-input">Choose Theme</p>
                             <div class="theme-switch-wrapper">
                                 <span>🌞</span>
                                 <label class="theme-switch" for="checkbox">
@@ -99,12 +145,16 @@
                             class="fa fa-info-circle tooltip">
                             <span class="tooltiptext">
                                 All fields are mandatory, else you will get error in the markdown code.
-                            </span></i> All fields are mandatory
+                            </span></i> Mandatory field
                     </p>
                     <!--learning-->
                     <div class="padding">
                         <label>
-                            <p>Currently Learning</p>
+                            <p class="required-input">Currently Learning
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
                             <input class="fields" type="text" id="learn" placeholder="Problem solving & web development"
                                 required>
                             <span></span>
@@ -113,7 +163,11 @@
                     <!--collaboration-->
                     <div class="padding">
                         <label>
-                            <p>Looking To Collaborate On</p>
+                            <p class="required-input">Looking To Collaborate On
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
                             <input class="fields" type="text" id="collab" placeholder="Web development" required>
                             <span></span>
                         </label>
@@ -121,7 +175,11 @@
                     <!--helps-->
                     <div class="padding">
                         <label>
-                            <p>Looking for Help With</p>
+                            <p class="required-input">Looking for Help With
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
                             <input class="fields" type="text" id="helps"
                                 placeholder="Web development & competitive programming" required>
                             <span></span>
@@ -130,7 +188,11 @@
                     <!--Goals-->
                     <div class="padding">
                         <label>
-                            <p>Upcoming Goals of the Year</p>
+                            <p class="required-input">Upcoming Goals of the Year
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
                             <input class="fields" type="text" id="goals"
                                 placeholder="Contribute to more projects & learn new tech stacks" required>
                             <span></span>
@@ -148,12 +210,16 @@
                             class="fa fa-info-circle tooltip">
                             <span class="tooltiptext">
                                 All fields are mandatory, else you will get error in the markdown code.
-                            </span></i> All fields are mandatory
+                            </span></i> Mandatory field
                     </p>
                     <!--linkedin username-->
                     <div class="padding">
                         <label>
-                            <p>Linkedin Username</p>
+                            <p class="required-input">Linkedin Username
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
                             <input class="fields" type="text" id="linkedinUsername" placeholder="johndoe" required>
                             <span></span>
                         </label>
@@ -161,7 +227,11 @@
                     <!--twitter username-->
                     <div class="padding">
                         <label>
-                            <p>Twitter Username</p>
+                            <p class="required-input">Twitter Username
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
                             <input class="fields" type="text" id="twitterUsername" placeholder="johndoe" required>
                             <span></span>
                         </label>
@@ -169,7 +239,11 @@
                     <!--facebook username-->
                     <div class="padding">
                         <label>
-                            <p>Facebook Username</p>
+                            <p class="required-input">Facebook Username
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
                             <input class="fields" type="text" id="facebookUsername" placeholder="johndoe" required>
                             <span></span>
                         </label>
@@ -177,8 +251,24 @@
                     <!--instagram username-->
                     <div class="padding">
                         <label>
-                            <p>Instagram Username</p>
+                            <p class="required-input">Instagram Username
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
                             <input class="fields" type="text" id="instagramUsername" placeholder="johndoe" required>
+                            <span></span>
+                        </label>
+                    </div>
+                    <!--stackoverflow username-->
+                    <div class="padding">
+                        <label>
+                            <p class="required-input">StackOverFlow Username
+                                <span class="astrick-req">
+                                    *
+                                </span>
+                            </p>
+                            <input class="fields" type="text" id="stackoverflowUsername" placeholder="johndoe" required>
                             <span></span>
                         </label>
                     </div>
