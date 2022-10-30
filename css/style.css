@@ -23,11 +23,6 @@ section {
   height: calc(100vh - 50px);
 }
 
-@media screen and (max-width: 900px) {
-  section {
-    flex-direction: column;
-  }
-}
 
 .container {
   width: 450px;
@@ -104,15 +99,10 @@ label {
   transition: width 250ms ease-in-out;
 }
 
-#Form1 .btn-box {
-  width: 100%;
-  margin: 0;
-  text-align: right;
-}
-
 .btn-box {
   width: 100%;
-  margin: 45px 120px;
+  padding-top: 24px;
+  text-align: right;
 }
 
 form button {
@@ -146,7 +136,7 @@ form button {
 }
 
 .step-col {
-  width: 150px;
+  min-width: 150px;
   text-align: center;
   color: #333;
   position: relative;
@@ -387,4 +377,37 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+@media screen and (max-width: 900px) {
+  body{
+    overflow: initial;
+  }
+  section {
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    padding: 8px 0;
+  }
+  .step-col{
+    min-width: initial;
+    width: calc(100% / 3);
+  }
+  .container{
+    overflow-y: initial;
+    width: initial;
+  }
+  .container form{
+    padding: 8px 16px;
+  }
+  h3{
+    margin: 0;
+  }
+  p.message{
+    padding: 4px;
+  }
+  #progress {
+    width: calc(100% / 3)
+  }
 }
