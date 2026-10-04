@@ -45,3 +45,11 @@ People _love_ thorough bug reports. I'm not even kidding.
 ## Use a Consistent Coding Style
 
 - We use the default [Prettier](https://prettier.io/) settings to format our code
+
+## About this repository
+
+A static browser application for assembling a GitHub profile README from profile details and selected technologies.
+
+## Author
+
+Author: [rajivranjanmars](https://rajivranjana.in).
