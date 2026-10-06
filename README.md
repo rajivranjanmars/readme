@@ -52,4 +52,4 @@ A static browser application for assembling a GitHub profile README from profile
 
 ## Author
 
-Author: [rajivranjanmars](https://rajivranjana.in).
+Author: [Rajiv Ranjan](https://rajivranjan.in).
